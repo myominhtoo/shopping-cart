@@ -4,7 +4,7 @@ import { useCartContext } from "../context/CartContext";
 
 export function Navbar(){
 
-    const { cartQuantity } = useCartContext();
+    const { openCart , cartQuantity } = useCartContext();
     const quantity = cartQuantity();
 
     return (
@@ -19,6 +19,7 @@ export function Navbar(){
                             <Button variant='primary'
                                 style={{ width : '3rem ' , height : '3rem' , position : 'relative'}}
                                 className='rounded-circle'
+                                onClick={openCart}
                                 >
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"

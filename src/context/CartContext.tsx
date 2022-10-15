@@ -1,4 +1,5 @@
 import { createContext, useContext, useEffect, useState } from "react";
+import { ShoppingCart } from "../components/ShoppingCart";
 import { useLocalStorage } from "../hooks/useLocalStorage";
 
 type CartItem = {
@@ -109,6 +110,7 @@ export function CartContextProvider( { children } : CartContextProviderProp ){
          }
         >
             {children}
+        <ShoppingCart isOpen={isOpen} />
         </CartContext.Provider>
     )
 }
