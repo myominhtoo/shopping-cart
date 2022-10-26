@@ -90,10 +90,6 @@ export function CartContextProvider( { children } : CartContextProviderProp ){
         } , 0 );
     }
 
-    useEffect( () => {
-        console.log(cartItems)
-    });
-
     return (
         <CartContext.Provider 
          value={

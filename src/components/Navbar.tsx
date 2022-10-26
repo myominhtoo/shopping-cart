@@ -11,9 +11,7 @@ export function Navbar(){
             <NavbarBs sticky='top' className='mx-3 shadow-sm bg-white' >
                 <Container>
                     <Nav className='me-auto' >
-                        <Nav.Link to='/' as={Link}>Home</Nav.Link>
-                        <Nav.Link to='/store' as={Link}>Store</Nav.Link>
-                        <Nav.Link to='/about' as={Link}>About</Nav.Link>
+                        <h3>Test Store</h3>
                     </Nav>
                     { quantity > 0 && (
                             <Button variant='primary'
